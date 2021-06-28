@@ -74,13 +74,43 @@
     </section>
 
 
-    <!--Java/Javascript-->
+    <!--Java/Javascript-->             
     <h1>Fun Facts!</h1>
+    <p>Click <a href="/hello">here</a> to see content created by server code.</p>
     <p>Click this button to get a fun fact.</p>
     <button onclick="showText();">
       Get fact
     </button>
     <p id="text-container"></p>
+
+    <!-- Form-handler                     add div
+    <form action="/form-handler" method="POST">
+        <h1>Submit text to server</h1>       
+        <p>Enter some text here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br>
+        <input type="submit">
+    </form> -->
+
+    <!--Cloud Storage-->
+    <div>
+        <h1>Cloud Storage Hello World Example</h1>
+        <p>Type a message and click submit:</p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <p>Type some text:</p>
+            <textarea name="message"></textarea>
+            <br>
+            <p>Upload an image:</p>
+            <input type="file" name="image">
+            <br>
+            <br>
+            <button>Submit</button>
+        </form>
+        <p>Click <a href="/list-images">here</a> to see all of the uploaded images!</p>
+    </div>
+
+
+
 
     <!-- services section start -->
     <section class="services" id="services">
